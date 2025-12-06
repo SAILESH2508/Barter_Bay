@@ -258,19 +258,13 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
 - Razorpay for payment gateway
 - Icons from Icons8
 - Inspiration from modern e-commerce platforms
-
-## 📞 Support
-
-For support, email support@barterbay.com or open an issue on GitHub.
 
 ## ⚠️ Disclaimer
 
