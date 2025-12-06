@@ -1,0 +1,89 @@
+# Environment files
+.env
+.env.local
+.env.production
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Logs
+*.log
+logs/
+error_log
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.buildpath
+
+# Temporary files
+tmp/
+temp/
+cache/
+*.tmp
+*.bak
+*.backup
+*~
+
+# Composer
+vendor/
+composer.lock
+
+# Node modules (if using any build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build files
+dist/
+build/
+
+# Setup files (should be deleted after use)
+setup_admin.php
+
+# Test files (remove in production)
+test_cart_clear.php
+test_*.php
+
+# Documentation that shouldn't be in production
+CART_CLEARING_FIX.md
+PROJECT_AUDIT_REPORT.md
+SECURITY_FIXES_COMPLETED.md
+
+# Uploaded files (if you have user uploads)
+uploads/
+user_uploads/
+
+# Session files
+sessions/
+
+# Backup files
+backups/
+*.sql
+
+# Security
+.htpasswd
+
+# PHP
+.phpunit.result.cache
