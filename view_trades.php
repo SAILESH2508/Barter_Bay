@@ -94,6 +94,7 @@ $trades = $conn->query("SELECT t.*,
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <meta charset="UTF-8">
     <title>View Trades</title>
     <style>

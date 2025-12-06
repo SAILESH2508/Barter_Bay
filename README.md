@@ -5,6 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Build Status](https://github.com/SAILESH2508/Barter_Bay/actions/workflows/php-lint.yml/badge.svg)
 
 A modern web-based platform for secure buying, selling, and trading products. Built with PHP and SQLite, featuring Razorpay payment integration and a comprehensive trading system.
 
@@ -46,7 +47,7 @@ A modern web-based platform for secure buying, selling, and trading products. Bu
 ## 🚀 Quick Start
 
 ### Prerequisites
-- PHP 7.4 or higher
+- PHP 8.2 or higher
 - SQLite3 extension enabled
 - Web server (Apache/Nginx) or PHP built-in server
 - Razorpay account (for payment processing)
@@ -55,7 +56,7 @@ A modern web-based platform for secure buying, selling, and trading products. Bu
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/barter-bay.git
+git clone https://github.com/SAILESH2508/Barter_Bay.git
 cd barter-bay
 ```
 
@@ -182,7 +183,6 @@ After running `setup_admin.php`:
 
 ### Security Score: 9.5/10
 
-See `PROJECT_AUDIT_REPORT.md` for detailed security analysis.
 
 ## 📱 Responsive Design
 
@@ -206,11 +206,39 @@ See `PROJECT_AUDIT_REPORT.md` for detailed security analysis.
 - [ ] Trade history
 
 ## 📚 Documentation
+ 
+- **README.md** - Main project documentation
 
-- **PRODUCTION_DEPLOYMENT.md** - Deployment guide
-- **SECURITY_FIXES_COMPLETED.md** - Security improvements
-- **PROJECT_AUDIT_REPORT.md** - Security audit
-- **CART_CLEARING_FIX.md** - Cart functionality
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](images/screenshots/home_page.png)
+*The landing page welcoming users to Barter Bay.*
+
+### Login Page
+![Login Page](images/screenshots/login_page.png)
+*Secure login interface for accessing customer and admin accounts.*
+
+### Admin Setup
+![Admin Setup](images/screenshots/setup_admin_result.png)
+*Initial setup screen for creating administrator accounts.*
+
+### Trading Interface
+*(Screenshot unavailable - Requires Login)*
+The trading interface (`trade.php`) allows users to:
+- **Search** for products by name or category.
+- **View** details of products available for trade.
+- **Propose** a trade by selecting one of their own items to exchange.
+- **Status Indicators** show if a trade is pending, accepted, or rejected.
+
+### My Trades
+*(Screenshot unavailable - Requires Login)*
+The `my_trades.php` page provides a comprehensive history of all trading activities:
+- **Sent Requests**: Trades you have initiated.
+- **Received Requests**: Offers from other users.
+- **Visual Cards**: Shows images of both items involved in the trade.
+- **Status Tracking**: Real-time updates on trade status (Pending, Accepted, Rejected).
 
 ## 🤝 Contributing
 
@@ -258,6 +286,8 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+
+- **Sailesh S** - *Initial work* - [SAILESH2508](https://github.com/SAILESH2508)
 
 
 ## 🙏 Acknowledgments

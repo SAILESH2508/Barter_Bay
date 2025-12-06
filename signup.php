@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindValue(':password', $password, SQLITE3_TEXT);
 
     if ($stmt->execute()) {
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     } else {
         $error = "Signup failed!";
@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <meta charset="UTF-8">
     <title>Barter Bay - Sign Up</title>
     <style>
@@ -151,7 +152,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit" class="btn">Sign Up</button>
     </form>
-    <p>Already have an account? <a href="login.php">Login</a></p>
+    <p>Already have an account? <a href="index.php">Login</a></p>
 </div>
 
 <div class="info">

@@ -79,7 +79,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <nav class="navbar">
     <div class="logo">
         <a href="index.php" class="logo-link">
-            <img src="images/seal.png" class="seal-img" alt="Barter Bay logo">
+            <img src="images/seal.png?v=1" class="seal-img" alt="Barter Bay logo">
             <h1>Barter Bay</h1>
         </a>
     </div>
@@ -138,7 +138,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
         <?php else: ?>
 
-            <li><a href="login.php" class="<?= $currentPage=='login.php'?'active':'' ?>">Login</a></li>
+            <li><a href="index.php" class="<?= $currentPage=='index.php'?'active':'' ?>">Login</a></li>
             <li><a href="signup.php" class="<?= $currentPage=='signup.php'?'active':'' ?>">Sign Up</a></li>
 
             <!-- ✔️ ADDED PRODUCTS PAGE FOR GUEST -->

@@ -9,7 +9,7 @@ if (!isset($_SESSION['csrf_token'])) {
 
 // Redirect if not logged in
 if (!isset($_SESSION['customer'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -34,6 +34,7 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <meta charset="UTF-8">
     <title>My Cart - Barter Bay</title>
     <style>

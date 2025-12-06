@@ -3,7 +3,7 @@ session_start();
 include 'config.php';
 
 if (!isset($_SESSION['customer'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -50,6 +50,7 @@ if (empty($purchases)) {
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
         <meta charset="UTF-8">
         <title>Receipt - Barter Bay</title>
         <style>
@@ -84,6 +85,7 @@ $receipt_id = rand(100000, 999999);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <meta charset="UTF-8">
     <title>Cart Receipt - Barter Bay</title>
     <style>

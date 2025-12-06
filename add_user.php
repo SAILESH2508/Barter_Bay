@@ -3,7 +3,7 @@ session_start();
 include 'config.php';
 
 if (!isset($_SESSION['admin'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -46,6 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <title>Add User</title>
     <style>
         body { font-family: Arial; background: linear-gradient(to right, red, blue); color: white; }

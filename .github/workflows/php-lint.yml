@@ -16,12 +16,26 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '7.4'
+        php-version: '8.2'
         extensions: sqlite3, pdo_sqlite
         
     - name: Check PHP syntax
       run: |
-        find . -name "*.php" -not -path "./vendor/*" -exec php -l {} \; | grep -v "No syntax errors"
+        # Find all PHP files, run lint, and capture output
+        # Exclude vendor directory
+        output=$(find . -name "*.php" -not -path "./vendor/*" -exec php -l {} \;)
+        
+        # Filter for lines that don't contain "No syntax errors"
+        # The '|| true' ensures grep doesn't exit with 1 when no errors are found
+        errors=$(echo "$output" | grep -v "^No syntax errors detected in " | grep -v "^$" || true)
+        
+        if [ -n "$errors" ]; then
+          echo "Syntax errors found:"
+          echo "$errors"
+          exit 1
+        else
+          echo "No syntax errors detected in any PHP file."
+        fi
         
     - name: Display PHP version
       run: php -v

@@ -4,7 +4,7 @@ include 'config.php';
 
 // Check if the admin is logged in
 if (!isset($_SESSION['admin'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -15,6 +15,7 @@ $result = $conn->query("SELECT * FROM users");
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <title>Manage Users</title>
     <style>
         body { 

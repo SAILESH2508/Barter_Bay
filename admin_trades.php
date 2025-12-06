@@ -4,7 +4,7 @@ include 'config.php';
 
 // Basic admin authentication (assuming fixed credentials)
 if (!isset($_SESSION['admin'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -41,6 +41,7 @@ try {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <meta charset="UTF-8">
     <title>Admin - Manage Trades</title>
     <style>

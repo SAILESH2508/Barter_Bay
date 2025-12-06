@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['customer'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -41,6 +41,7 @@ $csrf_token = generateCSRFToken();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <meta charset="UTF-8">
     <title>Trade Products</title>
     <style>

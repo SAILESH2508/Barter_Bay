@@ -4,7 +4,7 @@ include 'config.php';
 
 // Check for admin login
 if (!isset($_SESSION['admin'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -22,6 +22,7 @@ $result = $stmt->execute();
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <title>Admin - View Products</title>
     <style>
         body { font-family: Arial, sans-serif; background: linear-gradient(to right, red, blue); color: white; }

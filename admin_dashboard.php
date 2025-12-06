@@ -3,7 +3,7 @@ session_start();
 
 // Check if admin is logged in
 if (!isset($_SESSION['admin'])) {
-    header("Location: admin_login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -13,6 +13,7 @@ $admin_name = htmlspecialchars($_SESSION['admin']);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <meta charset="UTF-8">
     <title>Admin Dashboard - Barter Bay</title>
     <style>

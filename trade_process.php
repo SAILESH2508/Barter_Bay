@@ -4,7 +4,7 @@ include 'config.php';
 
 // Ensure the user is logged in before proceeding
 if (!isset($_SESSION['customer'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 

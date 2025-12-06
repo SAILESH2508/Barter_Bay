@@ -4,7 +4,7 @@ include 'config.php';
 
 // Check if the admin is logged in
 if (!isset($_SESSION['admin'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 

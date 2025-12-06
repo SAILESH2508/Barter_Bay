@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['customer'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -234,6 +234,7 @@ if (!function_exists('createRazorpayOrder')) {
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
 <meta charset="utf-8">
 <title>Complete Your Purchase — Barter Bay</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">

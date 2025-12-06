@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['customer'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -29,6 +29,7 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Purchases - Barter Bay</title>

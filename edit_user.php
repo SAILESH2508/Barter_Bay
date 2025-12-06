@@ -4,7 +4,7 @@ include 'config.php';
 
 // Check if the admin is logged in
 if (!isset($_SESSION['admin'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -64,6 +64,7 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <title>Edit User</title>
     <style>
         body { font-family: Arial; background: linear-gradient(to right, red, blue); color: white; text-align: center; }

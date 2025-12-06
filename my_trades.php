@@ -3,7 +3,7 @@ session_start();
 include 'config.php';
 
 if (!isset($_SESSION['customer'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -35,6 +35,7 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/png" href="images/seal.png?v=1">
     <title>My Trades - Barter Bay</title>
     <style>
         body {
