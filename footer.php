@@ -1,8 +1,8 @@
 <style>
   :root{
-    --footer-bg: #0d0d0d;
-    --footer-text: #e0e0e0;
-    --footer-muted: #94a3b8;
+    --footer-bg: #f8f9fa;
+    --footer-text: #212529;
+    --footer-muted: #6c757d;
     --accent-red: #ef233c;
     --accent-blue: #3a86ff;
     --footer-gradient: linear-gradient(135deg, #ef233c 0%, #3a86ff 100%);
@@ -35,7 +35,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.03;
+    opacity: 0.05;
     filter: grayscale(100%);
     z-index: 1;
     pointer-events: none;
@@ -66,7 +66,7 @@
   }
 
   .footer-col h4 {
-    color: white;
+    color: var(--footer-text);
     font-size: 18px;
     margin-bottom: 5px;
     border-left: 3px solid var(--accent-red);
@@ -88,22 +88,24 @@
   .social-icons { display: flex; gap: 15px; margin-top: 10px; }
   .social-icons a {
     width: 40px; height: 40px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.05);
     display: flex; align-items: center; justify-content: center;
-    border-radius: 50%; transition: var(--transition); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50%; transition: var(--transition); border: 1px solid rgba(0,0,0,0.1);
   }
   .social-icons a:hover { background: var(--footer-gradient); border-color: transparent; transform: translateY(-5px); }
-  .social-icons img { width: 20px; filter: invert(100%); }
+  .social-icons a:hover img { filter: invert(100%); }
+  .social-icons img { width: 20px; filter: invert(0%); }
 
   /* Newsletter Form */
   .newsletter-form { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
   .newsletter-input {
     padding: 12px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-    color: white;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: var(--footer-text);
     border-radius: 8px;
     outline: none;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
   }
   .newsletter-btn {
     padding: 12px;
@@ -119,7 +121,7 @@
 
   .footer-divider {
     height: 1px;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
     margin: 40px 0 20px;
   }
 
@@ -129,7 +131,7 @@
     color: var(--footer-muted);
     padding: 10px 0;
   }
-  .footer-bottom strong { color: white; }
+  .footer-bottom strong { color: var(--footer-text); }
 
   @media (max-width: 900px) {
     .footer-container { grid-template-columns: 1fr 1fr; }
